@@ -10,8 +10,6 @@ customFolders = ['Assets',
 
 def createFolder(directory):
     try:
-        if not os.path.exists(dirPath):
-            print('Esse caminho nao existe!')
         if os.path.exists(dirPath) and not os.path.exists(finalPath):
             os.makedirs(directory)
     except OSError:
@@ -27,6 +25,9 @@ while True:
     try:
         dirPath = input('Directory: ').strip()
         if dirPath != "":
+            if not os.path.exists(dirPath):
+                print(lines + "\nThis directory doesn't exist!\n" + lines)
+                continue
             break
         elif dirPath == "":
             continue
@@ -38,7 +39,7 @@ while True:
 finalPath = ""
 while True:
     try:
-        askPath = int(input('[1] This directory is my main folder, \n'
+        askPath = int(input('\n[1] This directory is my main folder, \n'
                             '[2] I need to create a new main folder;\n'))
         if askPath == 1:
             for c in customFolders:

@@ -456,3 +456,5 @@ venv/Scripts/pip3.exe
 venv/Scripts/python.exe
 venv/Scripts/pythonw.exe
 .gitattributes
+DL_FolderGenerator_Icon.psd
+DL_FolderGenerator_Icon.png
