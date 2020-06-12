@@ -13,56 +13,59 @@ def createFolder(directory):
 lines = f"{40 * '-'}"
 msgError = lines + "\nERROR! Please type a correct value!\n" + lines
 
-# ADDING DIRECTORY
-dirPath = ""
 while True:
-    try:
-        dirPath = input('Directory: ').strip()
-        if dirPath != "":
-            if not os.path.exists(dirPath):
-                print("\nThis directory doesn't exist!\n")
+    # ADDING DIRECTORY
+    dirPath = ""
+    while True:
+        try:
+            dirPath = input('Directory: ').strip()
+
+            if dirPath != "":
+                if not os.path.exists(dirPath):
+                    print("\nERROR: This directory doesn't exist!\n")
+                    continue
+                break
+            elif dirPath == "":
                 continue
-            break
-        elif dirPath == "":
+        except:
+            print(msgError)
             continue
-    except:
-        print(msgError)
-        continue
 
-# EXISTING FOLDER OR CREATING A NEW ONE
-finalPath = ""
-while True:
-    try:
-        askPath = int(input('\n[1] This directory is my main folder, \n'
-                            '[2] I need to create a new main folder;\n'))
-        if askPath == 1:
-            file = open('customFolders.txt', 'r')
-            for line in file:
-                line = line.rstrip()
-                print(line)
-                finalPath = dirPath + f'/{line}'
-                createFolder(finalPath)
-                print(f'Final Path: {finalPath}')
-            file.close()
-            break
-        elif askPath == 2:
-            folderName = input('Main folder name: ')
-            file = open('customFolders.txt', 'r')
-            for line in file:
-                line = line.rstrip()
-                print(line)
-                finalPath = dirPath + '/' + folderName + f'/{line}'
-                createFolder(finalPath)
-                print(f'Final Path: {finalPath}')
-            file.close()
-            break
-    except:
-        print(msgError)
-        continue
+    # EXISTING FOLDER OR CREATING A NEW ONE
+    finalPath = ""
+    while True:
+        try:
+            askPath = int(input('\n[1] This directory is my main folder, \n'
+                                '[2] I need to create a new main folder;\n'))
+            if askPath == 1:
+                file = open('customFolders.txt', 'r')
+                print()
+                for line in file:
+                    line = line.rstrip()
+                    finalPath = dirPath + f'\{line}'
+                    createFolder(finalPath)
+                    print(f'Final Path: {finalPath}')
+                file.close()
+                break
+            elif askPath == 2:
+                folderName = input('Main folder name: ')
+                print()
+                file = open('customFolders.txt', 'r')
+                for line in file:
+                    line = line.rstrip()
+                    finalPath = dirPath + '/' + folderName + f'/{line}'
+                    createFolder(finalPath)
+                    print(f'Final Path: {finalPath}')
+                file.close()
+                break
+        except:
+            print(msgError)
+            continue
 
-# CREDITS
-print()
-print('Developed by: Danilo de Lúcio | June/2020')
-print('Site: www.danilodelucio.com')
-print('GitHub: www.github.com/danilodelucio')
-print()
+    # CREDITS
+    print('-------------------------------------------')
+    print('Developed by: Danilo de Lúcio | June/2020')
+    print('Site: www.danilodelucio.com')
+    print('GitHub: www.github.com/danilodelucio')
+    print('-------------------------------------------')
+    print()
