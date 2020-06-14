@@ -2,7 +2,7 @@
 
 Normally, most people save your custom folders in a specific path, to copy and paste on your project when its necessary (like a template). When they don't have this template, they create the folders one by one.
 
-The problem of one of these workflows, is that it is so boring to remember each folder name, or to take the template that you have saved before.
+The problem of one of these workflows, is that it is so boring to remember each folder name, or to take the template that you have saved before, accessing the directory every single time you need.
 
 Thinking about it, I've decided to create a Folder Generator, to set all folders for your projects. The only thing you will need to do, is just set your directories on ".txt" file, the FolderGenerator.exe will read this file to create all folders for you.
 
