@@ -4,15 +4,13 @@ Normally, most people save your custom folders in a specific path, to copy and p
 
 The problem of one of these workflows, is that it is so boring to remember each folder name, or to take the template that you have saved before, accessing the directory every single time you need.
 
-<<<<<<< HEAD
 Thinking about it, I've decided to create a Folder Generator, to set all folders for your projects.
 
-HOW TO USE IT
+----- HOW TO USE IT -----
 
 The only thing you will need to do, is just set your directories on ".txt" file, the FolderGenerator.exe will read this file to create all folders for you.
-=======
+
 Thinking about it, I've decided to create a Folder Generator, to set all folders for your projects. The only thing you will need to do, is just set your directories on ".txt" file, the FolderGenerator.exe will read this file to create all folders for you.
->>>>>>> a4dc67a77fc15eb17572eac25df3bfd8c59993d1
 
 When the app is opened, paste the current directory from your project, and press Enter.
 
@@ -20,16 +18,9 @@ If the path doesn't exist, you will be warned.
 
 So you will have 2 options:
 
-<<<<<<< HEAD
 [1] This directory is my main folder;
 [2] I need to create a new main folder;
 
-=======
-[1] This directory is my main folder,
-[2] I need to create a new main folder;
-
-
->>>>>>> a4dc67a77fc15eb17572eac25df3bfd8c59993d1
 If you choose the first one, all folders will be created in the same directory you have put before.
 
 If you choose the second one, you will need to create the main folder (given a name), and then will be created the folders.
@@ -40,11 +31,7 @@ You can use it for your personal projects or commercial purposes, FOR FREE!
 
 Just send me an email or leave a comment to let me know if this was useful for you.
 
-<<<<<<< HEAD
-I hope you enjoy it... thanks!
-=======
 I hope you enjoy it... thanks!
 
 
- 
->>>>>>> a4dc67a77fc15eb17572eac25df3bfd8c59993d1
+
