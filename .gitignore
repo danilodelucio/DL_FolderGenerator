@@ -458,3 +458,30 @@ venv/Scripts/pythonw.exe
 .gitattributes
 DL_FolderGenerator_Icon.psd
 DL_FolderGenerator_Icon.png
+DL_FolderGenerator_Icon v02.ico
+DL_FolderGenerator_Icon v02.png
+DL_FolderGenerator_Icon v03.2.ico
+DL_FolderGenerator_Icon v03.ico
+DL_FolderGenerator_Icon v03.png
+DL_FolderGenerator_Icon.ico
+icons/DL_FolderGenerator_Icon v02.ico
+icons/DL_FolderGenerator_Icon v02.png
+icons/DL_FolderGenerator_Icon v03.2.ico
+icons/DL_FolderGenerator_Icon v03.ico
+icons/DL_FolderGenerator_Icon v03.png
+icons/DL_FolderGenerator_Icon.ico
+DL_FolderGenerator_Icon v02.ico
+DL_FolderGenerator_Icon v02.png
+DL_FolderGenerator_Icon v03.2.ico
+DL_FolderGenerator_Icon v03.ico
+DL_FolderGenerator_Icon v03.png
+DL_FolderGenerator_Icon.ico
+*.ico
+DL_FolderGenerator_Icon.ico
+DL_FolderGenerator_Icon v03.png
+DL_FolderGenerator_Icon v03.ico
+DL_FolderGenerator_Icon v03.2.ico
+DL_FolderGenerator_Icon v02.png
+DL_FolderGenerator_Icon v02.ico
+*.ico
+*.png
