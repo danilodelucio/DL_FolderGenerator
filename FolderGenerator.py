@@ -1,5 +1,4 @@
 import os
-from FoldersSetup import *
 
 
 def createFolder(directory):
@@ -19,7 +18,6 @@ while True:
     while True:
         try:
             dirPath = input('Directory: ').strip()
-
             if dirPath != "":
                 if not os.path.exists(dirPath):
                     print("\nERROR: This directory doesn't exist!\n")
@@ -44,7 +42,7 @@ while True:
                     line = line.rstrip()
                     finalPath = dirPath + f'\{line}'
                     createFolder(finalPath)
-                    print(f'Final Path: {finalPath}')
+                    print(f'Final Path = {os.path.abspath(finalPath)}')
                 file.close()
                 break
             elif askPath == 2:
@@ -55,7 +53,7 @@ while True:
                     line = line.rstrip()
                     finalPath = dirPath + '/' + folderName + f'/{line}'
                     createFolder(finalPath)
-                    print(f'Final Path: {finalPath}')
+                    print(f'Final Path =  {os.path.abspath(finalPath)}')
                 file.close()
                 break
         except:
